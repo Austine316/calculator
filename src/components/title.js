@@ -1,5 +1,5 @@
 const title = () => {
-  return <h1> Simple Calculator</h1>;
+  return <h2> Simple Calculator</h2>;
 };
 
 export default title;
