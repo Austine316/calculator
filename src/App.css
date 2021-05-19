@@ -1,39 +1,73 @@
 .App {
+  /* background-color: tomato; */
+  margin-top: 1rem;
+}
+
+.calculator-container {
+  background-color: #222222e3;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 1px 0 5px rgb(0 0 0 / 50%);
+  padding: 2rem;
+  /* background-color: tomato; */
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: auto;
+}
+
+.button-container > button {
+  background-color: #222;
   text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #222;
+  font-family: "Roboto";
+  font-weight: 500;
+  /* box-shadow: 1px 0 5px rgb(0 0 0 / 50%); */
+  box-shadow: 0 0 5px darkgrey;
+  color: whitesmoke;
+  border-radius: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App > h1 {
+  text-align: center;
+  font-family: "Roboto";
+  margin-top: 0;
+  font-size: 35px;
+  font-weight: 700;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.resultDisplay {
+  height: 6rem;
+  margin-bottom: 1rem;
+  border: 2px solid #222;
+  background-color: #f5f5f5;
+  font-family: "Roboto";
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 5px;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.resultDisplay h1 {
+  text-align: right;
+  margin-right: 0.3rem;
+  font-weight: normal;
+  flex: 1;
+  font-size: 30px;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.resultDisplay p {
+  margin-left: 0.3rem;
+  font-size: 20px;
+  flex: 1;
 }
