@@ -56,8 +56,6 @@
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  padding-left: 0.1rem;
-  padding-right: 0.1rem;
   overflow-x: hidden;
 }
 
@@ -65,10 +63,14 @@
   text-align: right;
   font-weight: bold;
   flex: 1;
-  font-size: 21px;
+  font-size: 22px;
+  padding-right: 0.1rem;
+  font-family: sans-serif;
 }
 
 .resultDisplay p {
+  padding-right: 0.1rem;
+  text-align: left;
   font-size: 18px;
   flex: 1;
 }
