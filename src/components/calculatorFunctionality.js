@@ -43,7 +43,7 @@ const Calculator = () => {
 
   const reset = () => {
     setFinalResult(0);
-    setInputResult("0");
+    setInputResult("");
   };
 
   const backspace = () => {
